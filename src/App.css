@@ -76,3 +76,91 @@ h1 {
   font-size: 1.1rem;
   font-weight: bold;
 }
+.coin-detail-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #2c2c2e;
+  border-radius: 10px;
+}
+
+.coin-detail-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.coin-detail-header img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.coin-description a {
+  color: #87CEEB; /* Sky Blue */
+  text-decoration: none;
+}
+
+.coin-description a:hover {
+  text-decoration: underline;
+}
+
+.back-button {
+  margin-bottom: 1.5rem;
+  padding: 10px 15px;
+  border: none;
+  background-color: #444;
+  color: #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.coin-price {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #f4f4f4;
+}
+.coin-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #1a1a1c;
+  border-radius: 8px;
+}
+
+.coin-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin-stats label {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.coin-stats span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.expand-button {
+  background: none;
+  border: none;
+  color: #87CEEB;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.chart-container {
+  margin: 2rem 0;
+}
+
+.coin-description h3, .chart-container h3 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
