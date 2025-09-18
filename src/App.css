@@ -1,42 +1,78 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #1a1a1c;
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+h1 {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.coin-table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-table th, .coin-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.coin-table th {
+  font-weight: bold;
+  color: #aaa;
 }
 
-.card {
-  padding: 2em;
+.coin-table tbody tr:hover {
+    background-color: #2c2c2e;
 }
 
-.read-the-docs {
-  color: #888;
+.coin-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.pagination-container button {
+  padding: 10px 20px;
+  border: 1px solid #444;
+  background-color: #333;
+  color: #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.pagination-container button:hover:not(:disabled) {
+  background-color: #444;
+}
+
+.pagination-container button:disabled {
+  background-color: #222;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.pagination-container span {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
