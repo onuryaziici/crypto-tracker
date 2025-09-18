@@ -13,9 +13,9 @@ const CoinTable = ({ coins, page }: CoinTableProps) => {
         <tr>
           <th>#</th>
           <th>Coin</th>
-          <th>Fiyat</th>
-          <th>24s Değişim</th>
-          <th>Piyasa Değeri</th>
+          <th>Price</th>
+          <th>24h Change</th>
+          <th>Market Cap</th>
         </tr>
       </thead>
       <tbody>

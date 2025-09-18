@@ -30,3 +30,15 @@ export interface CoinDetail {
     price_change_percentage_24h: number; // <-- YENİ
   };
 }
+export interface TrendingCoin {
+  item: {
+    id: string;
+    coin_id: number;
+    name: string;
+    symbol: string;
+    market_cap_rank: number;
+    thumb: string;
+    large: string;
+    score: number;
+  };
+}

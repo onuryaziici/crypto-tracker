@@ -10,11 +10,11 @@ const Pagination = ({ currentPage, onPageChange }: PaginationProps) => {
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
-        Önceki Sayfa
+        Previous Page
       </button>
-      <span>Sayfa {currentPage}</span>
+      <span>Page {currentPage}</span>
       <button onClick={() => onPageChange(currentPage + 1)}>
-        Sonraki Sayfa
+        Next Page
       </button>
     </div>
   );
